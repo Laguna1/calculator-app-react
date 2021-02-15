@@ -1,5 +1,8 @@
 # Getting Started with Create React App
 
+### live Demo link
+[Heroku link](https://calculator-oks.herokuapp.com/)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -65,5 +68,23 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/a
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-## Authors
+## Author
+
+👤 **Oksana Petrova**
+ - Github:[@Laguna1](https://github.com/Laguna1)
+ - Linkedin: [Oksana Petrova](https://www.linkedin.com/in/oksana-petrova/
+ - Twitter: [Oksana Petrova](https://twitter.com/OksanaP48303303)
+
+
+🤝 Contributing
+
+Contributions, issues and feature requests are welcome!
+
+Feel free to check the issues page. Show your support
+
+Give a ⭐️ if you like this project! 
+
+- Acknowledgments
+
+Thanks to Microverse for making this possible!
 
