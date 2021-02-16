@@ -36,7 +36,7 @@ In the project directory, you can run:
 
 👤 **Oksana Petrova**
  - Github:[@Laguna1](https://github.com/Laguna1)
- - Linkedin: [Oksana Petrova](https://www.linkedin.com/in/oksana-petrova/
+ - Linkedin: [Oksana Petrova](https://www.linkedin.com/in/oksana-petrova/)
  - Twitter: [Oksana Petrova](https://twitter.com/OksanaP48303303)
 
 
