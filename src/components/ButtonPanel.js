@@ -1,5 +1,3 @@
-const ButtonPanel = () => {
-
-};
+const ButtonPanel = () => '';
 
 export default ButtonPanel;
