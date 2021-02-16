@@ -6,6 +6,7 @@ const ButtonPanel = () => (
       <Button buttonName="AC" />
       <Button buttonName="+/-" />
       <Button buttonName="%" />
+      <Button buttonName="/" />
     </div>
 
     <div>
