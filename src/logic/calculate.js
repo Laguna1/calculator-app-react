@@ -1,5 +1,35 @@
 const calculate = (calcData, btnName) => {
-  const { total, next, operation } = calcData;
+  let { total, next, operation } = calcData;
+
+  if (next && btnName === '+/-') {
+    return { next: next * -1 };
+  }
+  if (total && btnName === '+/-') {
+    return { total: total * -1 };
+  }
+
+  if (btnName === 'AC') {
+    total = null;
+    next = null;
+    operation = null;
+    if (btnName === '%') {
+      next = 0.01 * total;
+    }
+    return { total, next, operation };
+  }
+
+  if (btnName === '.') {
+    if (next) {
+      if (next.includes('.')) return {};
+      return { total, next: `${next}.`, operation };
+    }
+    if (total) {
+      if (total.includes('.')) return {};
+      return { total: `${total}.`, next, operation };
+    }
+    return { total: '0.', next, operation };
+  }
+  return { total, next, operation };
 };
 
 export default calculate;
