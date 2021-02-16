@@ -1,13 +1,12 @@
-import './App.css';
+import '../App.css';
+import Display from './Display';
+import ButtonPanel from './ButtonPanel';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          Hello! React-Calculator-App will be here!
-        </p>
-      </header>
+      <Display />
+      <ButtonPanel />
     </div>
   );
 }
