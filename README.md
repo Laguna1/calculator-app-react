@@ -1,11 +1,11 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# React-Calculator-App
+## React-Calculator-App
 
 ### Live Demo link
 [Heroku link](https://calculator-oks.herokuapp.com/)
 
-## Available Scripts
+### Available Scripts
 
 In the project directory, you can run:
 
@@ -19,7 +19,7 @@ In the project directory, you can run:
 
 **Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-## Learn More
+### Learn More
 
 ### Code Splitting
 
@@ -40,16 +40,16 @@ In the project directory, you can run:
  - Twitter: [Oksana Petrova](https://twitter.com/OksanaP48303303)
 
 
-## 🤝 Contributing
+### 🤝 Contributing
 
 Contributions, issues and feature requests are welcome!
 
 Feel free to check the issues page. 
 
-## Show your support
+### Show your support
 
 Give a ⭐️ if you like this project! 
 
-## 📝 License
+### 📝 License
 
 This project is [MIT](https://opensource.org/licenses/MIT) licensed.
