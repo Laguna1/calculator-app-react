@@ -3,36 +3,36 @@ import Button from './Button';
 const ButtonPanel = () => (
   <div>
     <div>
-      <div>AC</div>
-      <div>+/-</div>
-      <div>%</div>
+      <Button buttonName="AC" />
+      <Button buttonName="+/-" />
+      <Button buttonName="%" />
     </div>
 
     <div>
-      <div>7</div>
-      <div>8</div>
-      <div>9</div>
-      <div>X</div>
+      <Button buttonName="7" />
+      <Button buttonName="8" />
+      <Button buttonName="9" />
+      <Button buttonName="X" />
     </div>
 
     <div>
-      <div>3</div>
-      <div>4</div>
-      <div>5</div>
-      <div>6</div>
+      <Button buttonName="3" />
+      <Button buttonName="4" />
+      <Button buttonName="5" />
+      <Button buttonName="6" />
     </div>
 
     <div>
-      <div>1</div>
-      <div>2</div>
-      <div>3</div>
-      <div>+</div>
+      <Button buttonName="1" />
+      <Button buttonName="2" />
+      <Button buttonName="3" />
+      <Button buttonName="+" />
     </div>
 
     <div>
-      <div>0</div>
-      <div>.</div>
-      <div>=</div>
+      <Button buttonName="0" />
+      <Button buttonName="." />
+      <Button buttonName="=" />
     </div>
   </div>
 );
