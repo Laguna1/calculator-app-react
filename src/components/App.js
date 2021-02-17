@@ -27,6 +27,15 @@ class App extends React.Component {
       operation: result.operation,
     });
   }
+
+  render() {
+    return (
+      <div className="">
+        <Display />
+        <ButtonPanel />
+      </div>
+    );
+  }
 }
 
 export default App;
