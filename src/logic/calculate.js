@@ -25,13 +25,15 @@ function calculate(calcData, buttonName) {
       operation = '=';
     }
   } else if (buttonName === '.') {
-    if (next) {
+    if (next && next.indexOf('.') === -1) {
       return { total, next: `${next}.`, operation };
     }
-    if (total) {
+    if (total && !next && total.indexOf('.') === -1) {
       return { total: `${total}.`, next, operation };
     }
-    return { total: '0.', next, operation };
+    if (!total && !next) {
+      return { total: '0.', next, operation };
+    }
   }
 
   if (total && next && operation && operations.includes(buttonName)) {

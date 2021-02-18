@@ -16,7 +16,11 @@ const operate = (numberOne, numberTwo, operation) => {
       result = a.times(b);
       break;
     case '/':
-      result = b === '0' ? 'undefined' : a.div(b);
+      try {
+        result = a.div(b);
+      } catch {
+        result = 'ERROR';
+      }
       break;
     case '%':
       result = a.div(100);
