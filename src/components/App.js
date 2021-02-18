@@ -4,7 +4,7 @@ import Display from './Display';
 import ButtonPanel from './ButtonPanel';
 import calculate from '../logic/calculate';
 
-class App extends React.Component {
+export default class App extends React.Component {
   constructor(props) {
     super(props);
 
@@ -13,43 +13,22 @@ class App extends React.Component {
       next: null,
       operation: null,
     };
-
     this.handleClick = this.handleClick.bind(this);
   }
 
   handleClick(buttonName) {
-    const { total, next, operation } = this.state;
-    const calcData = { total, next, operation };
-
-    const result = calculate(calcData, buttonName);
-    this.setState({
-      total: result.total,
-      next: result.next,
-      operation: result.operation,
-    });
+    this.setState(calcData => calculate(calcData, buttonName));
   }
 
   render() {
     const { total, next, operation } = this.state;
-    let result;
-    if (operation === null) {
-      result = total;
-    } else if (operation === '+/-') {
-      if (next === null || next === '0') {
-        result = total;
-      } else {
-        result = next;
-      }
-    } else {
-      result = next === null ? operation : next;
-    }
+    const result = next || total || '0';
+
     return (
       <div className="">
-        <Display result={result} />
+        <Display result={result.toString()} operation={operation} />
         <ButtonPanel clickHandler={this.handleClick} />
       </div>
     );
   }
 }
-
-export default App;
