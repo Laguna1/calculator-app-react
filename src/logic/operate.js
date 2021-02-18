@@ -21,8 +21,11 @@ const operate = (numberOne, numberTwo, operation) => {
     case '%':
       result = a.div(100);
       break;
+    case '+/-':
+      result = a.times(-1);
+      break;
     default:
-      result = '';
+      result = a;
   }
 
   return result.toString();
