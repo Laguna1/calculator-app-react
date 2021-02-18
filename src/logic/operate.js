@@ -25,7 +25,7 @@ const operate = (numberOne, numberTwo, operation) => {
       result = a.times(-1);
       break;
     default:
-      result = a;
+      result = 0;
   }
 
   return result.toString();
