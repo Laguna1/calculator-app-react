@@ -2,7 +2,11 @@ import PropTypes from 'prop-types';
 
 const Display = props => {
   const { result } = props;
-  return <p>{result}</p>;
+  return (
+    <>
+      {result}
+    </>
+  );
 };
 
 Display.defaultProps = {
