@@ -19,10 +19,10 @@ const ButtonPanel = ({ clickHandler }) => (
     </div>
 
     <div>
-      <Button handleClick={clickHandler} buttonName="3" />
       <Button handleClick={clickHandler} buttonName="4" />
       <Button handleClick={clickHandler} buttonName="5" />
       <Button handleClick={clickHandler} buttonName="6" />
+      <Button handleClick={clickHandler} buttonName="-" />
     </div>
 
     <div>

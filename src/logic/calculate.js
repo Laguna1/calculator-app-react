@@ -15,7 +15,7 @@ const calculate = (calcData, buttonName) => {
 
   if (buttonName === '+/-' && !next && total && total !== 'ERROR') {
     return {
-      total: (-total).toString(),
+      total: -total,
       next,
       operation,
     };
@@ -24,20 +24,44 @@ const calculate = (calcData, buttonName) => {
   if (buttonName === '+/-' && next && total !== 'ERROR') {
     return {
       total,
-      next: (-next).toString(),
+      next: -next,
       operation,
     };
   }
 
-  if (operations.includes(buttonName) && next && total) {
+  if (buttonName === '%' && next && !total) {
     return {
-      total: operate(total, next, buttonName),
+      total: operate(next, 0, '%'),
       next: null,
-      operation: null,
+      operation,
     };
   }
 
-  if (operations.includes(buttonName) && !next && total) {
+  if (buttonName === '%' && !next && total) {
+    return {
+      total: operate(total, 0, '%'),
+      next: null,
+      operation,
+    };
+  }
+
+  if (operations.includes(buttonName) && next && !total) {
+    return {
+      total: next,
+      next: null,
+      operation: buttonName,
+    };
+  }
+
+  if (operations.includes(buttonName) && next && total && operation) {
+    return {
+      total: operate(total, next, operation),
+      next: null,
+      operation: buttonName,
+    };
+  }
+
+  if (operations.includes(buttonName) && total && !next) {
     return {
       total,
       next,
@@ -45,15 +69,7 @@ const calculate = (calcData, buttonName) => {
     };
   }
 
-  if (operations.includes(buttonName) && next && !total) {
-    return {
-      total: next,
-      next,
-      operation: buttonName,
-    };
-  }
-
-  if (numbers.includes(buttonName)) {
+  if (numbers.includes(buttonName) && ((total && operation) || (!total && !operation))) {
     return {
       total,
       next: next ? `${next}${buttonName}` : `${buttonName}`,
@@ -61,15 +77,7 @@ const calculate = (calcData, buttonName) => {
     };
   }
 
-  if (total === 'ERROR') {
-    return {
-      total: null,
-      next: null,
-      operation: null,
-    };
-  }
-
-  if (buttonName === '=') {
+  if (buttonName === '=' && total && next && operation) {
     return {
       total: operate(total, next, operation),
       next: null,
@@ -78,14 +86,23 @@ const calculate = (calcData, buttonName) => {
   }
 
   if (buttonName === '.') {
-    if (!next) {
+    if ((!total && !next) || (total && operation && !next)) {
       return {
         total,
         next: '0.',
         operation,
       };
     }
+
+    if (next && !next.toString().includes('.')) {
+      return {
+        total,
+        next: `${next}.`,
+        operation,
+      };
+    }
   }
+
   return { total, next, operation };
 };
 

@@ -27,7 +27,7 @@ class App extends React.Component {
     const { next, total, operation } = this.state;
 
     return (
-      <div>
+      <>
         <Display
           result={
             `${(!total && next) || total || ''}
@@ -36,7 +36,7 @@ class App extends React.Component {
           }
         />
         <ButtonPanel clickHandler={this.handleClick} />
-      </div>
+      </>
     );
   }
 }
