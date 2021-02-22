@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import Display from './Display';
 import ButtonPanel from './ButtonPanel';
 import calculate from '../logic/calculate';
+import NavBar from './Navbar';
 
 const App = () => {
   const [state, setState] = useState({
@@ -28,6 +29,7 @@ const App = () => {
 
   return (
     <div className="">
+      <NavBar />
       <Display result={result.toString()} operation={operation} />
       <ButtonPanel clickHandler={handleClick} />
     </div>
