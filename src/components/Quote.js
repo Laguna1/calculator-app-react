@@ -1,11 +1,9 @@
 import React from 'react';
-import NavBar from './Navbar';
 
 const Quote = () => (
-  <>
-    <NavBar />
-    <h1>“Experience is the name everyone gives to their mistakes.”</h1>
-  </>
+  <div className=" ">
+    <h1>“Experience is the name everyone gives to their mistakes.” - Unknown Author</h1>
+  </div>
 );
 
 export default Quote;
