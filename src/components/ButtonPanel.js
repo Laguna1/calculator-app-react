@@ -4,37 +4,37 @@ import Button from './Button';
 
 const ButtonPanel = ({ clickHandler }) => (
   <div>
-    <div className="">
-      <Button handleClick={clickHandler} buttonName="AC" />
-      <Button handleClick={clickHandler} buttonName="+/-" />
-      <Button handleClick={clickHandler} buttonName="%" />
+    <div className="btn-row">
+      <Button handleClick={clickHandler} color="grey" buttonName="AC" />
+      <Button handleClick={clickHandler} color="grey" buttonName="+/-" />
+      <Button handleClick={clickHandler} color="grey" buttonName="%" />
       <Button handleClick={clickHandler} buttonName="/" />
     </div>
 
-    <div className="">
-      <Button handleClick={clickHandler} buttonName="7" />
-      <Button handleClick={clickHandler} buttonName="8" />
-      <Button handleClick={clickHandler} buttonName="9" />
+    <div className="btn-row">
+      <Button handleClick={clickHandler} color="grey" buttonName="7" />
+      <Button handleClick={clickHandler} color="grey" buttonName="8" />
+      <Button handleClick={clickHandler} color="grey" buttonName="9" />
       <Button handleClick={clickHandler} buttonName="x" />
     </div>
 
-    <div className="">
-      <Button handleClick={clickHandler} buttonName="4" />
-      <Button handleClick={clickHandler} buttonName="5" />
-      <Button handleClick={clickHandler} buttonName="6" />
+    <div className="btn-row">
+      <Button handleClick={clickHandler} color="grey" buttonName="4" />
+      <Button handleClick={clickHandler} color="grey" buttonName="5" />
+      <Button handleClick={clickHandler} color="grey" buttonName="6" />
       <Button handleClick={clickHandler} buttonName="-" />
     </div>
 
-    <div className="">
-      <Button handleClick={clickHandler} buttonName="1" />
-      <Button handleClick={clickHandler} buttonName="2" />
-      <Button handleClick={clickHandler} buttonName="3" />
+    <div className="btn-row">
+      <Button handleClick={clickHandler} color="grey" buttonName="1" />
+      <Button handleClick={clickHandler} color="grey" buttonName="2" />
+      <Button handleClick={clickHandler} color="grey" buttonName="3" />
       <Button handleClick={clickHandler} buttonName="+" />
     </div>
 
-    <div>
-      <Button handleClick={clickHandler} buttonName="0" />
-      <Button handleClick={clickHandler} buttonName="." />
+    <div className="btn-row">
+      <Button handleClick={clickHandler} color="grey" buttonName="0" />
+      <Button handleClick={clickHandler} color="grey" buttonName="." />
       <Button handleClick={clickHandler} buttonName="=" />
     </div>
   </div>

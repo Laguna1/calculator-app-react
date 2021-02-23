@@ -43,6 +43,45 @@
   text-align: justify;
 }
 
+.display {
+  width: 700px;
+  text-align: right;
+  background-color: #858693;
+  font-size: 2.7rem;
+  box-sizing: border-box;
+  padding: 1.5rem;
+  color: white;
+  height: 100px;
+  font-weight: bold;
+}
+
+.btn-row {
+  display: flex;
+  width: 700px;
+  height: 100px;
+}
+
+.button {
+  width: 25%;
+  font-size: 1.5rem;
+  box-sizing: border-box;
+  height: 100%;
+  color: #000;
+  border: 0.1rem solid #bababa;
+}
+
+.grey {
+  background-color: #e0e0e0;
+}
+
+.orange {
+  background-color: #f39148;
+}
+
+.big {
+  width: 50%;
+}
+
 .quote-page {
   display: flex;
   justify-content: center;
