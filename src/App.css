@@ -67,7 +67,7 @@
   box-sizing: border-box;
   height: 100%;
   color: #000;
-  border: 0.1rem solid #bababa;
+  border: 0.15rem solid #bababa;
 }
 
 .grey {
@@ -75,7 +75,7 @@
 }
 
 .orange {
-  background-color: #f39148;
+  background-color: rgb(243, 145, 62);
 }
 
 .big {

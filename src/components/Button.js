@@ -2,18 +2,17 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 function Button({
-  buttonName, wide, color, handleClick,
+  buttonName, color, wide, handleClick,
 }) {
-  let className = `button ${color}`;
-  if (wide) {
-    className += 'big';
-  }
+  const className = `button ${color}`;
+
   return (
     <button
       name={buttonName}
       value={buttonName}
       type="button"
       className={className}
+      style={{ width: wide ? '50%' : '25%' }}
       onClick={() => {
 				handleClick(buttonName); // eslint-disable-line
       }}
@@ -31,8 +30,8 @@ Button.propTypes = {
 };
 
 Button.defaultProps = {
-  wide: false,
   color: 'orange',
+  wide: false,
 };
 
 export default Button;
