@@ -3,12 +3,51 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: rgb(218, 216, 216);
   min-height: 10vh;
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-end;
+  justify-content: space-between;
+  align-items: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(248, 249, 250);
+}
+
+.navbar {
+  border-bottom: 1px solid white;
+  padding: 10px 25px;
+}
+
+.h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  padding-left: 3%;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px 25px;
+}
+
+.nav-link {
+  text-decoration: none;
+  margin: auto 10px;
+}
+
+.start-page {
+  display: flex;
+  padding: 14% 5%;
+  line-height: 1.5;
+  text-indent: 2.5em;
+  text-align: justify;
+}
+
+.quote-page {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 17% 5%;
+  font-size: 1.2rem;
+  text-align: center;
 }
