@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Home = () => (
+const StartPage = () => (
   <div className="start-page">
     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
     labore et dolore magna aliqua.
@@ -18,4 +18,4 @@ const Home = () => (
   </div>
 );
 
-export default Home;
+export default StartPage;
