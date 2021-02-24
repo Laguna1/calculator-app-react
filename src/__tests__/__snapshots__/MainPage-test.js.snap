@@ -2,16 +2,304 @@
 
 exports[`MainPage renders correctly 1`] = `
 <div
-  className="start-page"
+  className="App"
 >
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui o!cia deserunt mollit anim id est laborum. IpsuLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui o!cia deserunt mollit anim id est laborum. Ipsu Welcome to our page!
-</div>
-`;
-
-exports[`StartPage renders correctly 1`] = `
-<div
-  className="start-page"
->
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui o!cia deserunt mollit anim id est laborum. IpsuLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui o!cia deserunt mollit anim id est laborum. Ipsu Welcome to our page!
+  <div
+    className="sc-bdfBwQ kHSvhl"
+  >
+    <div
+      className="display"
+    >
+      0
+    </div>
+    <div>
+      <div
+        className="btn-row"
+      >
+        <button
+          className="button grey"
+          name="AC"
+          onClick={[Function]}
+          style={
+            Object {
+              "width": "25%",
+            }
+          }
+          type="button"
+          value="AC"
+        >
+          AC
+        </button>
+        <button
+          className="button grey"
+          name="+/-"
+          onClick={[Function]}
+          style={
+            Object {
+              "width": "25%",
+            }
+          }
+          type="button"
+          value="+/-"
+        >
+          +/-
+        </button>
+        <button
+          className="button grey"
+          name="%"
+          onClick={[Function]}
+          style={
+            Object {
+              "width": "25%",
+            }
+          }
+          type="button"
+          value="%"
+        >
+          %
+        </button>
+        <button
+          className="button orange"
+          name="/"
+          onClick={[Function]}
+          style={
+            Object {
+              "width": "25%",
+            }
+          }
+          type="button"
+          value="/"
+        >
+          /
+        </button>
+      </div>
+      <div
+        className="btn-row"
+      >
+        <button
+          className="button grey"
+          name="7"
+          onClick={[Function]}
+          style={
+            Object {
+              "width": "25%",
+            }
+          }
+          type="button"
+          value="7"
+        >
+          7
+        </button>
+        <button
+          className="button grey"
+          name="8"
+          onClick={[Function]}
+          style={
+            Object {
+              "width": "25%",
+            }
+          }
+          type="button"
+          value="8"
+        >
+          8
+        </button>
+        <button
+          className="button grey"
+          name="9"
+          onClick={[Function]}
+          style={
+            Object {
+              "width": "25%",
+            }
+          }
+          type="button"
+          value="9"
+        >
+          9
+        </button>
+        <button
+          className="button orange"
+          name="x"
+          onClick={[Function]}
+          style={
+            Object {
+              "width": "25%",
+            }
+          }
+          type="button"
+          value="x"
+        >
+          x
+        </button>
+      </div>
+      <div
+        className="btn-row"
+      >
+        <button
+          className="button grey"
+          name="4"
+          onClick={[Function]}
+          style={
+            Object {
+              "width": "25%",
+            }
+          }
+          type="button"
+          value="4"
+        >
+          4
+        </button>
+        <button
+          className="button grey"
+          name="5"
+          onClick={[Function]}
+          style={
+            Object {
+              "width": "25%",
+            }
+          }
+          type="button"
+          value="5"
+        >
+          5
+        </button>
+        <button
+          className="button grey"
+          name="6"
+          onClick={[Function]}
+          style={
+            Object {
+              "width": "25%",
+            }
+          }
+          type="button"
+          value="6"
+        >
+          6
+        </button>
+        <button
+          className="button orange"
+          name="-"
+          onClick={[Function]}
+          style={
+            Object {
+              "width": "25%",
+            }
+          }
+          type="button"
+          value="-"
+        >
+          -
+        </button>
+      </div>
+      <div
+        className="btn-row"
+      >
+        <button
+          className="button grey"
+          name="1"
+          onClick={[Function]}
+          style={
+            Object {
+              "width": "25%",
+            }
+          }
+          type="button"
+          value="1"
+        >
+          1
+        </button>
+        <button
+          className="button grey"
+          name="2"
+          onClick={[Function]}
+          style={
+            Object {
+              "width": "25%",
+            }
+          }
+          type="button"
+          value="2"
+        >
+          2
+        </button>
+        <button
+          className="button grey"
+          name="3"
+          onClick={[Function]}
+          style={
+            Object {
+              "width": "25%",
+            }
+          }
+          type="button"
+          value="3"
+        >
+          3
+        </button>
+        <button
+          className="button orange"
+          name="+"
+          onClick={[Function]}
+          style={
+            Object {
+              "width": "25%",
+            }
+          }
+          type="button"
+          value="+"
+        >
+          +
+        </button>
+      </div>
+      <div
+        className="btn-row"
+      >
+        <button
+          className="button grey"
+          name="0"
+          onClick={[Function]}
+          style={
+            Object {
+              "width": "50%",
+            }
+          }
+          type="button"
+          value="0"
+        >
+          0
+        </button>
+        <button
+          className="button grey"
+          name="."
+          onClick={[Function]}
+          style={
+            Object {
+              "width": "25%",
+            }
+          }
+          type="button"
+          value="."
+        >
+          .
+        </button>
+        <button
+          className="button orange"
+          name="="
+          onClick={[Function]}
+          style={
+            Object {
+              "width": "25%",
+            }
+          }
+          type="button"
+          value="="
+        >
+          =
+        </button>
+      </div>
+    </div>
+  </div>
 </div>
 `;
