@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Quote Page renders correctly 1`] = `
+<div
+  className="quote-page"
+>
+  <h1>
+    “Experience is the name everyone gives to their mistakes.” - Unknown Author
+  </h1>
+</div>
+`;
